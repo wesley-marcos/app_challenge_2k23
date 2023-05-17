@@ -37,3 +37,20 @@ LinearGradient backgroundApp() {
     end: Alignment.bottomRight,
   );
 }
+
+LinearGradient backgroundAppBar() {
+  return const LinearGradient(
+    colors: [
+      Color(0xFF9DCE59),
+      AppColors.mediumDarkCyan,
+      AppColors.cyan,
+    ],
+    stops: [
+      0,
+      0.7,
+      1,
+    ],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+}

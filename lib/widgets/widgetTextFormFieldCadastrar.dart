@@ -5,6 +5,8 @@ Widget textFormFieldCadastrar(context, label, type) {
     data: Theme.of(context).copyWith(
       textSelectionTheme: const TextSelectionThemeData(
         cursorColor: Colors.black,
+        selectionColor: Color(0xFF9DCE59),
+        selectionHandleColor: Color(0xFF9DCE59),
       ),
     ),
     child: TextFormField(

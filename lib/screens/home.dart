@@ -1,5 +1,6 @@
 import 'package:app_challenge_2k23/basic_templates/appColors.dart';
 import 'package:app_challenge_2k23/screens/cadastrar.dart';
+import 'package:app_challenge_2k23/screens/start.dart';
 import 'package:app_challenge_2k23/widgets/widgetButton.dart';
 import 'package:flutter/material.dart';
 
@@ -36,17 +37,18 @@ class _HomeState extends State<Home> {
             Text(
               "Conect+",
               style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 40,
-                  fontWeight: FontWeight.bold,
-                  shadows: [
-                    Shadow(
-                      color: Colors.black.withOpacity(0.5), // Cor da sombra
-                      offset: const Offset(3,
-                          3), // Deslocamento da sombra (horizontal, vertical)
-                      blurRadius: 3,
-                    )
-                  ]),
+                color: Colors.black,
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+                shadows: [
+                  Shadow(
+                    color: Colors.black.withOpacity(0.5), // Cor da sombra
+                    offset: const Offset(
+                        3, 3), // Deslocamento da sombra (horizontal, vertical)
+                    blurRadius: 3,
+                  )
+                ],
+              ),
               textAlign: TextAlign.center,
             ),
             const SizedBox(
@@ -60,7 +62,7 @@ class _HomeState extends State<Home> {
             const SizedBox(
               height: 40,
             ),
-            buttons('Entrar', const Cadastrar(), context),
+            buttons('Entrar', const StartPage(), context),
             const SizedBox(
               height: 20,
             ),

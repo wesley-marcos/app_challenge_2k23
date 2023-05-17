@@ -1,5 +1,5 @@
 import 'package:app_challenge_2k23/basic_templates/appColors.dart';
-import 'package:app_challenge_2k23/basic_templates/widgetTextFormFieldCadastrar.dart';
+import 'package:app_challenge_2k23/widgets/widgetTextFormFieldCadastrar.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/widgetButton.dart';
