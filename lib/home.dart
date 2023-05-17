@@ -14,16 +14,16 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('images/background.png'),
             fit: BoxFit.cover,
           ),
         ),
-        padding: EdgeInsets.only(top: 45, left: 30, right: 30),
+        padding: const EdgeInsets.only(top: 25, left: 30, right: 30),
         alignment: Alignment.center,
         child: Padding(
-          padding: const EdgeInsets.only(left: 20, top: 0, right: 20),
+          padding: const EdgeInsets.only(left: 0, top: 0, right: 0),
           child: ListView(
             children: [
               Stack(
@@ -33,29 +33,75 @@ class _HomeState extends State<Home> {
                   )
                 ],
               ),
-              SizedBox(
-                height: 30,
-              ),
               Text(
                 "Conect+",
-                style: TextStyle(color: Colors.black, fontSize: 20),
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    shadows: [
+                      Shadow(
+                        color: Colors.black.withOpacity(0.5), // Cor da sombra
+                        offset: const Offset(3,
+                            3), // Deslocamento da sombra (horizontal, vertical)
+                        blurRadius: 3,
+                      )
+                    ]),
+                textAlign: TextAlign.center,
               ),
-
-              Text(
+              const SizedBox(
+                height: 10,
+              ),
+              const Text(
                 "Você por dentro \nda sua rede",
+                textAlign: TextAlign.center,
                 //style: TextStyle(color: Colors.black, fontSize: 20),
               ),
-
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              ElevatedButton(
-                onPressed: () {},
-                child: Text("Entrar"),
+              SizedBox(
+                height: 53,
+                width: 347,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFF9DCE59),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                  child: const Text(
+                    "Entrar",
+                    style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.black),
+                  ),
+                ),
               ),
-              ElevatedButton(
-                onPressed: () {},
-                child: Text("Cadastrar"),
+              const SizedBox(
+                height: 29,
+              ),
+              SizedBox(
+                height: 53,
+                width: 347,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFF9DCE59),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                  child: const Text(
+                    "Cadastrar",
+                    style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.black),
+                  ),
+                ),
               ),
             ],
           ),
