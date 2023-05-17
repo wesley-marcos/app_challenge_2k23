@@ -34,6 +34,27 @@ class StartPage extends StatelessWidget {
         ),
       ),
       drawer: menuDrawer(context),
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Container(
+              color: Colors.white,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 350, bottom: 0),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: const BorderRadius.only(
+                    topLeft: Radius.circular(20.0),
+                    topRight: Radius.circular(20.0),
+                  ),
+                  gradient: backgroundApp(),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
