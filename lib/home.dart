@@ -13,15 +13,13 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Alternativas",
-          style: TextStyle(fontSize: 25),
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/background.png'),
+              fit: BoxFit.cover,
+            ),),
         ),
-        centerTitle: true,
-        backgroundColor: AppColors.dodgerBlue,
-      ),
-        body: Container(),
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:app_challenge_2k23/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       //color: AppColors.purple,
-      home: Container()
+      home: Home()
     );
   }
 }

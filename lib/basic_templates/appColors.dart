@@ -16,4 +16,7 @@ class AppColors {
   static final Color steelBlue = Color(0xFF4682B4);
   static final Color lightSteelBlue = Color(0xFFB0C4DE);
   static final Color lightBlue = Color(0xFFADD8E6);
+  static final Color basicGreen = Color(0xFF9DCE59);
+  static final Color mediumDarkCyan = Color(0xFF11B1AE);
+  static final Color cyan = Color(0xFF019EDC);
 }
