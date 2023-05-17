@@ -60,23 +60,11 @@ class _Home2State extends State<Home2> {
             const SizedBox(
               height: 40,
             ),
-            Padding(
-              padding: const EdgeInsets.only(
-                left: 24,
-                right: 24,
-              ),
-              child: buttons('Entrar', const Cadastrar(), context),
-            ),
+            buttons('Entrar', const Cadastrar(), context),
             const SizedBox(
               height: 20,
             ),
-            Padding(
-              padding: const EdgeInsets.only(
-                left: 24,
-                right: 24,
-              ),
-              child: buttons('Cadastrar', const Cadastrar(), context),
-            ),
+            buttons('Cadastrar', const Cadastrar(), context),
           ],
         ),
       ),
