@@ -6,7 +6,7 @@ Widget widgetRowApps(image, name, speed, usage) {
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: [
       Container(
-        padding: const EdgeInsets.only(left: 20, top: 20),
+        padding: EdgeInsets.only(left: 20, top: 20),
         width: 50,
         height: 50,
         decoration: BoxDecoration(
@@ -19,17 +19,17 @@ Widget widgetRowApps(image, name, speed, usage) {
       Text(
         "$name",
         textAlign: TextAlign.center,
-        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
       ),
       Text(
         "$speed",
         textAlign: TextAlign.center,
-        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
       ),
       Text(
         "$usage",
         textAlign: TextAlign.center,
-        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
       ),
     ],
   );
