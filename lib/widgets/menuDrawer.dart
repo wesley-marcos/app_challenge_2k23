@@ -1,4 +1,5 @@
 import 'package:app_challenge_2k23/basic_templates/appColors.dart';
+import 'package:app_challenge_2k23/screens/aboutUs.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/home.dart';
@@ -70,7 +71,11 @@ Widget menuDrawer(BuildContext context) {
               fontSize: 18,
             ),
           ),
-          onTap: () {},
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => const AboutUs()));
+          },
         ),
         ListTile(
           leading: const Icon(
