@@ -98,6 +98,11 @@ class StartPage extends StatelessWidget {
                               const SizedBox(
                                 height: 20,
                               ),
+                              widgetRowApps(
+                                  "images/teams.png", "Teams", "0Mb/s", "0%"),
+                              const SizedBox(
+                                height: 20,
+                              ),
                             ],
                           ),
                         ),

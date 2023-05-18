@@ -3,6 +3,7 @@ import 'package:app_challenge_2k23/widgets/widgetButton.dart';
 import 'package:flutter/material.dart';
 
 import '../basic_templates/appColors.dart';
+import '../widgets/widgetAboutUs.dart';
 
 class AboutUs extends StatefulWidget {
   const AboutUs({Key? key}) : super(key: key);
@@ -20,45 +21,28 @@ class _AboutUsState extends State<AboutUs> {
           gradient: backgroundApp(),
         ),
         child: ListView(
-          padding: EdgeInsets.only(left: 20, top: 180),
           children: [
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-
-            //Foto Balestra
-            Container(
-              width: double.infinity,
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
+            Padding(
+              padding: const EdgeInsets.only(left: 20, top: 180),
+              child: Column(
                 children: [
-                  SizedBox(
-                    width: 100,
-                    height: 100,
-                    child: Container(
-                      width: 60,
-                      height: 60,
-                      decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
-                          image: DecorationImage(
-                            image: NetworkImage(
-                                "https://avatars.githubusercontent.com/pedro-balestra"),
-                            //fit: BoxFit.values,
-                          )),
-                    ),
+                  aboutUs(
+                    'Pedro Balestra',
+                    const NetworkImage("https://avatars.githubusercontent"
+                        ".com/pedro-balestra"),
                   ),
                   const SizedBox(
                     width: 20,
-                    height: 30,
+                    height: 100,
                   ),
-                  Text(
-                    "Pedro Balestra\nGraduando em Eng. de \nComputação\n9º "
-                    "Período - INATEL",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 15,
-                    ),
-                  )
+                  aboutUs(
+                    'Wesley Marcos',
+                    const NetworkImage("https://avatars.githubusercontent"
+                        ".com/wesley-marcos"),
+                  ),
                 ],
               ),
             ),
@@ -66,50 +50,7 @@ class _AboutUsState extends State<AboutUs> {
               width: 20,
               height: 100,
             ),
-
-            //Foto Wesley
-            Container(
-              width: double.infinity,
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  SizedBox(
-                    width: 100,
-                    height: 100,
-                    child: Container(
-                      width: 60,
-                      height: 60,
-                      decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
-                          image: DecorationImage(
-                            image:
-                                NetworkImage("https://avatars.githubusercontent"
-                                    ".com/wesley-marcos"),
-                            //fit: BoxFit.values,
-                          )),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 20,
-                    height: 30,
-                  ),
-                  Text(
-                    "Wesley Marcos\nGraduando em Eng. de \nComputação\n9º "
-                    "Período - INATEL",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 15,
-                    ),
-                  )
-                ],
-              ),
-            ),
-
-            const SizedBox(
-              width: 20,
-              height: 100,
-            ),
-            buttons("Voltar", StartPage(), context)
+            buttons('Voltar', const StartPage(), context),
           ],
         ),
       ),
