@@ -1,3 +1,4 @@
+import 'package:app_challenge_2k23/widgets/widgetRowApps.dart';
 import 'package:flutter/material.dart';
 
 import '../basic_templates/appColors.dart';
@@ -54,6 +55,56 @@ class StartPage extends StatelessWidget {
                             topRight: Radius.circular(20.0),
                           ),
                           gradient: backgroundApp(),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            ListView(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 350, bottom: 0),
+                  child: SingleChildScrollView(
+                    child: SizedBox(
+                      height: 600,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: const BorderRadius.only(
+                            topLeft: Radius.circular(20.0),
+                            topRight: Radius.circular(20.0),
+                          ),
+                          gradient: backgroundApp(),
+                        ),
+                        child: ListView(
+                          children: [
+                            const SizedBox(
+                              height: 20,
+                            ),
+                            widgetRowApps("images/netflix.png", "Netflix",
+                                "1.1Gb/s", "40%"),
+                            const SizedBox(
+                              height: 20,
+                            ),
+                            widgetRowApps("images/instagram.png", "Instagram",
+                                "800Mb/s", "25%"),
+                            const SizedBox(
+                              height: 20,
+                            ),
+                            widgetRowApps("images/tiktok.png", "Tiktok",
+                                "300Mb/s", "15%"),
+                            const SizedBox(
+                              height: 20,
+                            ),
+                            widgetRowApps("images/spotify (1).png", "Spotfy",
+                                "100Mb/s", "10%"),
+                            const SizedBox(
+                              height: 20,
+                            ),
+                            widgetRowApps("images/whatsapp.png", "WhatsApp",
+                                "100Mb/s", "10%")
+                          ],
                         ),
                       ),
                     ),
