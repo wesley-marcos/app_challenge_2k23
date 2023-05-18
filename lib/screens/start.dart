@@ -58,27 +58,27 @@ class StartPage extends StatelessWidget {
                         ),
                         child: ListView(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               height: 20,
                             ),
                             widgetRowApps("images/netflix.png", "Netflix",
                                 "1.1Gb/s", "40%"),
-                            SizedBox(
+                            const SizedBox(
                               height: 20,
                             ),
                             widgetRowApps("images/instagram.png", "Instagram",
                                 "800Mb/s", "25%"),
-                            SizedBox(
+                            const SizedBox(
                               height: 20,
                             ),
                             widgetRowApps("images/tiktok.png", "Tiktok",
                                 "300Mb/s", "15%"),
-                            SizedBox(
+                            const SizedBox(
                               height: 20,
                             ),
                             widgetRowApps("images/spotify (1).png", "Spotfy",
                                 "100Mb/s", "10%"),
-                            SizedBox(
+                            const SizedBox(
                               height: 20,
                             ),
                             widgetRowApps("images/whatsapp.png", "WhatsApp",
