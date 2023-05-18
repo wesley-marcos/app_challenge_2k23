@@ -48,10 +48,10 @@ class StartPage extends StatelessWidget {
               child: ListView(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 350, bottom: 10),
+                    padding: const EdgeInsets.only(top: 350, bottom: 0),
                     child: SingleChildScrollView(
                       child: SizedBox(
-                        height: 365,
+                        height: 370,
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: const BorderRadius.only(
@@ -73,7 +73,7 @@ class StartPage extends StatelessWidget {
                               ),
 
                               widgetRowApps("images/instagram.png", "Instagram",
-                                  "0.8Gb/s", "25%"),
+                                  "800Mb/s", "25%"),
 
                               SizedBox(
                                 height: 20,
@@ -94,20 +94,6 @@ class StartPage extends StatelessWidget {
                               ),
 
                               widgetRowApps("images/whatsapp.png", "WhatsApp",
-                                  "100Mb/s", "10%"),
-
-                              SizedBox(
-                                height: 20,
-                              ),
-
-                              widgetRowApps("images/instagram.png", "Instagram",
-                                  "0.8Gb/s", "25%"),
-
-                              SizedBox(
-                                height: 20,
-                              ),
-
-                              widgetRowApps("images/spotify (1).png", "Spotfy",
                                   "100Mb/s", "10%"),
 
                               SizedBox(
