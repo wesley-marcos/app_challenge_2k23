@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   map_launcher: ^2.3.3
   flutter_web_browser: "^0.17.1"
-  url_launcher_plus: ^2.1.4
+  url_launcher: ^6.1.11
 
 dev_dependencies:
   flutter_test:
