@@ -40,39 +40,52 @@ Widget widgetAppsDetails(image, download, upload, tipo, host) {
           ],
         ),
       ),
-      const SizedBox(
+      SizedBox(
         height: 50,
-      ),
-      Container(
-        width: 300,
-        height: 100,
-        padding: const EdgeInsets.only(left: 25, right: 25),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          boxShadow: const [
-            BoxShadow(
-              color: Colors.black26,
-              offset: Offset(0, 2),
-              blurRadius: 4,
+        child: Padding(
+          padding: const EdgeInsets.only(left: 10),
+          child: Container(
+            alignment: Alignment.centerLeft,
+            child: const Text(
+              'Ver no mapa os pontos de acesso:',
+              style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
             ),
-          ],
+          ),
         ),
-        child: Stack(
-          children: [
-            Image.asset(
-              'images/mapView.jpg',
+      ),
+      const SizedBox(
+        height: 10,
+      ),
+      Padding(
+        padding: const EdgeInsets.only(left: 5, right: 5),
+        child: Container(
+          width: 300,
+          height: 100,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            image: const DecorationImage(
+              image: AssetImage('images/mapRetrato.png'),
               fit: BoxFit.cover,
             ),
-            ClipRRect(
+          ),
+          child: ClipRRect(
               borderRadius: BorderRadius.circular(10),
               child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                filter: ImageFilter.blur(sigmaX: 2.0, sigmaY: 2.0),
                 child: Container(
                   color: Colors.transparent,
+                  child: const Center(
+                    child: Text(
+                      "View Map",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
+                      ),
+                    ),
+                  ),
                 ),
-              ),
-            )
-          ],
+              )),
         ),
       )
     ],
