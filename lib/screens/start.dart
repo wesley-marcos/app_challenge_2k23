@@ -44,7 +44,7 @@ class StartPage extends StatelessWidget {
               color: Colors.white,
               child: ListView(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   widgetAppsDetails("images/netflix.png", "1.1Gb/s", "500Mb/s",
@@ -59,7 +59,7 @@ class StartPage extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 350, bottom: 0),
                     child: SingleChildScrollView(
                       child: SizedBox(
-                        height: 400,
+                        height: 600,
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: const BorderRadius.only(
@@ -70,32 +70,32 @@ class StartPage extends StatelessWidget {
                           ),
                           child: ListView(
                             children: [
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
                               widgetRowApps("images/netflix.png", "Netflix",
                                   "1.1Gb/s", "40%"),
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
                               widgetRowApps("images/instagram.png", "Instagram",
                                   "800Mb/s", "25%"),
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
                               widgetRowApps("images/tiktok.png", "Tiktok",
                                   "300Mb/s", "15%"),
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
                               widgetRowApps("images/spotify (1).png", "Spotfy",
                                   "100Mb/s", "10%"),
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
                               widgetRowApps("images/whatsapp.png", "WhatsApp",
                                   "100Mb/s", "10%"),
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
                             ],
