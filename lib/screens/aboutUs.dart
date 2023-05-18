@@ -26,29 +26,31 @@ class _AboutUsState extends State<AboutUs> {
               height: 20,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 20, top: 180),
+              padding: const EdgeInsets.only(left: 20, top: 120),
               child: Column(
                 children: [
                   aboutUs(
-                    'Pedro Balestra',
-                    const NetworkImage("https://avatars.githubusercontent"
-                        ".com/pedro-balestra"),
-                  ),
+                      'Pedro Balestra',
+                      const NetworkImage("https://avatars.githubusercontent"
+                          ".com/pedro-balestra"),
+                      'https://github.com/pedro-balestra',
+                      'https://www.linkedin.com/in/pedro-balestra/'),
                   const SizedBox(
                     width: 20,
                     height: 100,
                   ),
                   aboutUs(
-                    'Wesley Marcos',
-                    const NetworkImage("https://avatars.githubusercontent"
-                        ".com/wesley-marcos"),
-                  ),
+                      'Wesley Marcos',
+                      const NetworkImage("https://avatars.githubusercontent"
+                          ".com/wesley-marcos"),
+                      'https://github.com/wesley-marcos',
+                      'https://www.linkedin.com/in/wesley-marcos-borges/'),
                 ],
               ),
             ),
             const SizedBox(
               width: 20,
-              height: 100,
+              height: 70,
             ),
             buttons('Voltar', const StartPage(), context),
           ],

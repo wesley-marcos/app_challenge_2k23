@@ -14,6 +14,8 @@ class StartPage extends StatefulWidget {
 }
 
 class _StartPageState extends State<StartPage> {
+  int selectedItemIndex = -1;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
