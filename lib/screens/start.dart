@@ -4,10 +4,16 @@ import 'package:flutter/material.dart';
 
 import '../basic_templates/appColors.dart';
 import '../widgets/menuDrawer.dart';
+import '../widgets/widgetInfoApp.dart';
 
-class StartPage extends StatelessWidget {
-  const StartPage({super.key});
+class StartPage extends StatefulWidget {
+  const StartPage({Key? key}) : super(key: key);
 
+  @override
+  _StartPageState createState() => _StartPageState();
+}
+
+class _StartPageState extends State<StartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,9 +28,8 @@ class StartPage extends StatelessWidget {
             color: Colors.black,
             shadows: [
               Shadow(
-                color: Colors.black.withOpacity(0.5), // Cor da sombra
-                offset: const Offset(
-                    1, 2), // Deslocamento da sombra (horizontal, vertical)
+                color: Colors.black.withOpacity(0.5),
+                offset: const Offset(1, 2),
                 blurRadius: 3,
               )
             ],
@@ -37,90 +42,75 @@ class StartPage extends StatelessWidget {
       ),
       drawer: menuDrawer(context),
       body: SafeArea(
-        child: Stack(
+        child: Column(
           children: [
             Container(
-              //padding: EdgeInsets.only(left: 10),
               color: Colors.white,
               child: ListView(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
                 children: [
                   SizedBox(
                     child: Container(
-                      padding: const EdgeInsets.only(left: 10, top: 5),
+                      padding: const EdgeInsets.only(left: 12, top: 5),
                       child: const Text(
                         "Rede: Nome da rede",
                         style: TextStyle(
-                            fontSize: 15, fontWeight: FontWeight.bold),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  widgetAppsDetails("images/netflix.png", "1.1Gb/s", "500Mb/s",
-                      "Streaming", "192.168.0.1"),
-                ],
-              ),
-            ),
-            const SizedBox(),
-            Expanded(
-              child: ListView(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 350, bottom: 0),
-                    child: SingleChildScrollView(
-                      child: SizedBox(
-                        height: 600,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: const BorderRadius.only(
-                              topLeft: Radius.circular(20.0),
-                              topRight: Radius.circular(20.0),
-                            ),
-                            gradient: backgroundApp(),
-                          ),
-                          child: ListView(
-                            children: [
-                              const SizedBox(
-                                height: 20,
-                              ),
-                              widgetRowApps("images/netflix.png", "Netflix",
-                                  "1.1Gb/s", "40%"),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                              widgetRowApps("images/instagram.png", "Instagram",
-                                  "800Mb/s", "25%"),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                              widgetRowApps("images/tiktok.png", "Tiktok",
-                                  "300Mb/s", "15%"),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                              widgetRowApps("images/spotify (1).png", "Spotfy",
-                                  "100Mb/s", "10%"),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                              widgetRowApps("images/whatsapp.png", "WhatsApp",
-                                  "100Mb/s", "10%"),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                              widgetRowApps(
-                                  "images/teams.png", "Teams", "0Mb/s", "0%"),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                            ],
-                          ),
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ),
                   ),
+                  widgetAppsDetails(
+                    "images/netflix.png",
+                    "1.1Gb/s",
+                    "500Mb/s",
+                    "Streaming",
+                    "192.168.0.1",
+                  ),
                 ],
+              ),
+            ),
+            Expanded(
+              child: SizedBox(
+                height: 100,
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(20.0),
+                      topRight: Radius.circular(20.0),
+                    ), // Arredonda as bordas
+                    gradient: backgroundApp(),
+                  ),
+                  child: CustomScrollView(
+                    slivers: [
+                      SliverList(
+                        delegate: SliverChildBuilderDelegate(
+                          (BuildContext context, int index) {
+                            return Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(vertical: 8.0),
+                              child: widgetRowApps(
+                                "images/${appsList[index].toLowerCase()}.png",
+                                appsList[index],
+                                speedList[index],
+                                percentageList[index],
+                              ),
+                            );
+                          },
+                          childCount: appsList.length,
+                        ),
+                      ),
+                      SliverFillRemaining(
+                        hasScrollBody: false,
+                        child: Container(
+                          color: Colors.transparent,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ),
           ],

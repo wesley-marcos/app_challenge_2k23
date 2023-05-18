@@ -69,25 +69,29 @@ Widget widgetAppsDetails(image, download, upload, tipo, host) {
             ),
           ),
           child: ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 2.0, sigmaY: 2.0),
-                child: Container(
-                  color: Colors.transparent,
-                  child: const Center(
-                    child: Text(
-                      "View Map",
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        decoration: TextDecoration.underline,
-                      ),
+            borderRadius: BorderRadius.circular(10),
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 2.0, sigmaY: 2.0),
+              child: Container(
+                color: Colors.transparent,
+                child: const Center(
+                  child: Text(
+                    "View Map",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.underline,
                     ),
                   ),
                 ),
-              )),
+              ),
+            ),
+          ),
         ),
-      )
+      ),
+      const SizedBox(
+        height: 30,
+      ),
     ],
   );
 }
