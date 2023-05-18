@@ -1,3 +1,4 @@
+import 'package:app_challenge_2k23/widgets/widgetAppsDetails.dart';
 import 'package:app_challenge_2k23/widgets/widgetRowApps.dart';
 import 'package:flutter/material.dart';
 
@@ -39,9 +40,16 @@ class StartPage extends StatelessWidget {
         child: Stack(
           children: [
             Container(
+              //padding: EdgeInsets.only(left: 10),
               color: Colors.white,
               child: ListView(
-                children: [],
+                children: [
+                  SizedBox(
+                    height: 20,
+                  ),
+                  widgetAppsDetails("images/netflix.png", "1.1Gb/s", "500Mb/s",
+                      "Streaming", "192.168.0.1"),
+                ],
               ),
             ),
             Expanded(
@@ -51,7 +59,7 @@ class StartPage extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 350, bottom: 0),
                     child: SingleChildScrollView(
                       child: SizedBox(
-                        height: 370,
+                        height: 400,
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: const BorderRadius.only(
@@ -67,35 +75,26 @@ class StartPage extends StatelessWidget {
                               ),
                               widgetRowApps("images/netflix.png", "Netflix",
                                   "1.1Gb/s", "40%"),
-
                               SizedBox(
                                 height: 20,
                               ),
-
                               widgetRowApps("images/instagram.png", "Instagram",
                                   "800Mb/s", "25%"),
-
                               SizedBox(
                                 height: 20,
                               ),
-
                               widgetRowApps("images/tiktok.png", "Tiktok",
                                   "300Mb/s", "15%"),
-
                               SizedBox(
                                 height: 20,
                               ),
-
                               widgetRowApps("images/spotify (1).png", "Spotfy",
                                   "100Mb/s", "10%"),
-
                               SizedBox(
                                 height: 20,
                               ),
-
                               widgetRowApps("images/whatsapp.png", "WhatsApp",
                                   "100Mb/s", "10%"),
-
                               SizedBox(
                                 height: 20,
                               ),
