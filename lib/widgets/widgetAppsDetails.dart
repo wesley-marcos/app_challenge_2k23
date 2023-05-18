@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:app_challenge_2k23/widgets/widgetMap.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -68,19 +69,22 @@ Widget widgetAppsDetails(image, download, upload, tipo, host) {
               fit: BoxFit.cover,
             ),
           ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(10),
-            child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 2.0, sigmaY: 2.0),
-              child: Container(
-                color: Colors.transparent,
-                child: const Center(
-                  child: Text(
-                    "View Map",
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
+          child: InkWell(
+            onTap: openGoogleMaps,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 2.0, sigmaY: 2.0),
+                child: Container(
+                  color: Colors.transparent,
+                  child: const Center(
+                    child: Text(
+                      "View Map",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
+                      ),
                     ),
                   ),
                 ),
