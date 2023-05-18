@@ -1,5 +1,6 @@
 import 'package:app_challenge_2k23/basic_templates/appColors.dart';
 import 'package:app_challenge_2k23/screens/cadastrar.dart';
+import 'package:app_challenge_2k23/screens/login.dart';
 import 'package:app_challenge_2k23/screens/start.dart';
 import 'package:app_challenge_2k23/widgets/widgetButton.dart';
 import 'package:flutter/material.dart';
@@ -62,7 +63,7 @@ class _HomeState extends State<Home> {
             const SizedBox(
               height: 40,
             ),
-            buttons('Entrar', const StartPage(), context),
+            buttons('Entrar', const Login(), context),
             const SizedBox(
               height: 20,
             ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget textFormFieldCadastrar(context, label, type) {
+Widget textFormFieldLogin(context, label, type) {
   return Theme(
     data: Theme.of(context).copyWith(
       textSelectionTheme: const TextSelectionThemeData(

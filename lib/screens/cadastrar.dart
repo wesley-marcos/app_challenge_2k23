@@ -34,7 +34,7 @@ class _CadastrarState extends State<Cadastrar> {
                     height: 22,
                   ),
                   textFormFieldCadastrar(
-                      context, 'email', TextInputType.emailAddress),
+                      context, 'Email', TextInputType.emailAddress),
                   const SizedBox(
                     height: 22,
                   ),
