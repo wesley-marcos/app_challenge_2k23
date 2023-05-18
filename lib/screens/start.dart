@@ -44,63 +44,83 @@ class StartPage extends StatelessWidget {
                 children: [],
               ),
             ),
-            ListView(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 350, bottom: 0),
-                  child: SingleChildScrollView(
-                    child: SizedBox(
-                      height: 600,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: const BorderRadius.only(
-                            topLeft: Radius.circular(20.0),
-                            topRight: Radius.circular(20.0),
+            Expanded(
+              child: ListView(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 350, bottom: 10),
+                    child: SingleChildScrollView(
+                      child: SizedBox(
+                        height: 365,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: const BorderRadius.only(
+                              topLeft: Radius.circular(20.0),
+                              topRight: Radius.circular(20.0),
+                            ),
+                            gradient: backgroundApp(),
                           ),
-                          gradient: backgroundApp(),
-                        ),
-                        child: ListView(
-                          children: [
-                            SizedBox(
-                              height: 20,
-                            ),
-                            widgetRowApps("images/netflix.png", "Netflix",
-                                "1.1Gb/s", "40%"),
+                          child: ListView(
+                            children: [
+                              SizedBox(
+                                height: 20,
+                              ),
+                              widgetRowApps("images/netflix.png", "Netflix",
+                                  "1.1Gb/s", "40%"),
 
-                            SizedBox(
-                              height: 20,
-                            ),
+                              SizedBox(
+                                height: 20,
+                              ),
 
-                            widgetRowApps("images/instagram.png", "Instagram",
-                                "800Mb/s", "25%"),
+                              widgetRowApps("images/instagram.png", "Instagram",
+                                  "0.8Gb/s", "25%"),
 
-                            SizedBox(
-                              height: 20,
-                            ),
+                              SizedBox(
+                                height: 20,
+                              ),
 
-                            widgetRowApps("images/tiktok.png", "Tiktok",
-                                "300Mb/s", "15%"),
+                              widgetRowApps("images/tiktok.png", "Tiktok",
+                                  "300Mb/s", "15%"),
 
-                            SizedBox(
-                              height: 20,
-                            ),
+                              SizedBox(
+                                height: 20,
+                              ),
 
-                            widgetRowApps("images/spotify (1).png", "Spotfy",
-                                "100Mb/s", "10%"),
+                              widgetRowApps("images/spotify (1).png", "Spotfy",
+                                  "100Mb/s", "10%"),
 
-                            SizedBox(
-                              height: 20,
-                            ),
+                              SizedBox(
+                                height: 20,
+                              ),
 
-                            widgetRowApps("images/whatsapp.png", "WhatsApp",
-                                "100Mb/s", "10%")
-                          ],
+                              widgetRowApps("images/whatsapp.png", "WhatsApp",
+                                  "100Mb/s", "10%"),
+
+                              SizedBox(
+                                height: 20,
+                              ),
+
+                              widgetRowApps("images/instagram.png", "Instagram",
+                                  "0.8Gb/s", "25%"),
+
+                              SizedBox(
+                                height: 20,
+                              ),
+
+                              widgetRowApps("images/spotify (1).png", "Spotfy",
+                                  "100Mb/s", "10%"),
+
+                              SizedBox(
+                                height: 20,
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),
