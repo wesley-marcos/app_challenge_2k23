@@ -44,14 +44,25 @@ class StartPage extends StatelessWidget {
               color: Colors.white,
               child: ListView(
                 children: [
+                  SizedBox(
+                    child: Container(
+                      padding: const EdgeInsets.only(left: 10, top: 5),
+                      child: const Text(
+                        "Rede: Nome da rede",
+                        style: TextStyle(
+                            fontSize: 15, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
                   const SizedBox(
-                    height: 20,
+                    height: 10,
                   ),
                   widgetAppsDetails("images/netflix.png", "1.1Gb/s", "500Mb/s",
                       "Streaming", "192.168.0.1"),
                 ],
               ),
             ),
+            const SizedBox(),
             Expanded(
               child: ListView(
                 children: [
