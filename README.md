@@ -101,7 +101,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ```bash
 
 # Clone este repositório
-$ git clone [https://github.com/Brendhon/SearchFacul_Web.git](https://github.com/wesley-marcos/app_challenge_2k23.git)
+$ git clone https://github.com/wesley-marcos/app_challenge_2k23.git
 
 # Acesse a pasta do projeto
 
