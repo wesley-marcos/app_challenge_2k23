@@ -46,18 +46,16 @@ class PerfilPage extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  textFormFieldPerfil(
-                      context, '09999909090', TextInputType.name),
+                  textFormFieldPerfil(context, '000000000', TextInputType.name),
                   const SizedBox(
                     height: 20,
                   ),
-                  textFormFieldPerfil(
-                      context, 'wqeqweqw@sajkdssa', TextInputType.name),
+                  textFormFieldPerfil(context, 'appChallenge2k23@outlook.com',
+                      TextInputType.name),
                   const SizedBox(
                     height: 20,
                   ),
-                  textFormFieldPerfil(
-                      context, 'Pedro balesyta', TextInputType.name),
+                  textFormFieldPerfil(context, 'Balestra', TextInputType.name),
                   const SizedBox(
                     height: 35,
                   ),
