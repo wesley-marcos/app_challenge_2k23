@@ -90,8 +90,9 @@ class _HomeState extends State<Login> {
                 ],
               ),
             ),
-            const SizedBox(
-              height: 30,
+            // ignore: prefer_const_constructors
+            SizedBox(
+              height: 35,
             ),
             buttons('Confirmar', const StartPage(), context),
           ],

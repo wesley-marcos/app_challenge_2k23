@@ -1,7 +1,6 @@
 import 'dart:ui';
 
 import 'package:app_challenge_2k23/widgets/widgetMap.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 Widget widgetAppsDetails(image, download, upload, tipo, host) {
@@ -79,7 +78,7 @@ Widget widgetAppsDetails(image, download, upload, tipo, host) {
                   color: Colors.transparent,
                   child: const Center(
                     child: Text(
-                      "View Map",
+                      "Ver no Mapa",
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,

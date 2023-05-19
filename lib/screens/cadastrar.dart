@@ -24,7 +24,11 @@ class _CadastrarState extends State<Cadastrar> {
               padding: const EdgeInsets.only(top: 145, left: 28, right: 28),
               child: Column(
                 children: [
-                  textFormFieldCadastrar(context, 'Nome', TextInputType.name),
+                  textFormFieldCadastrar(
+                    context,
+                    'Nome',
+                    TextInputType.name,
+                  ),
                   const SizedBox(
                     height: 22,
                   ),

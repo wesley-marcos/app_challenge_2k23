@@ -5,6 +5,10 @@ List<String> appsList = [
   "Spotify",
   "WhatsApp",
   "Teams",
+  "LinkedIn",
+  "GitHub",
+  "chrome",
+  "bing",
 ];
 
 List<String> speedList = [
@@ -14,6 +18,10 @@ List<String> speedList = [
   "100Mb/s",
   "100Mb/s",
   "0Mb/s",
+  "0Mb/s",
+  "0Mb/s",
+  "0Mb/s",
+  "0Mb/s",
 ];
 
 List<String> percentageList = [
@@ -22,5 +30,9 @@ List<String> percentageList = [
   "15%",
   "10%",
   "10%",
+  "0%",
+  "0%",
+  "0%",
+  "0%",
   "0%",
 ];
