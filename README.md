@@ -1,6 +1,6 @@
 <h1 align="center">Conect+</h1>
 <h1 align="center">
-    <img align="center" src="images\logo_teste.png" width="300px;" alt="logo"/>
+    <img align="center" src="images\Logo_teste.png" width="300px;" alt="logo"/>
 </h1>
 <h3 align="center">✅ Concluído ✅</h3>
 <!-- <h3 align="center">🛠 Em Desenvolvimento 🛠</h3> -->
