@@ -109,8 +109,8 @@ $ flutter pub get
 <table>
   <tr>
     <td>
-      <h4 align="left">
-        <img style="border-radius: 50%; margin-right: 30px" src="https://avatars.githubusercontent.com/pedro-balestra" width="180px;" alt="Pedro Balestra">
+      <h4 align="center">
+        <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/pedro-balestra" width="180px;" alt="Pedro Balestra">
       </h4>
       <strong>Pedro Balestra</strong>
       <br>
@@ -122,8 +122,8 @@ $ flutter pub get
       </a>
     </td>
     <td>
-      <h4 align="left">
-        <img style="border-radius: 50%; margin-right: 30px" src="https://avatars.githubusercontent.com/wesley-marcos" width="180px;" alt="Wesley Marcos">
+      <h4 align="center">
+        <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/wesley-marcos" width="180px;" alt="Wesley Marcos">
       </h4>
       <strong>Wesley Marcos</strong>
       <br>
@@ -136,5 +136,3 @@ $ flutter pub get
     </td>
   </tr>
 </table>
-
----
