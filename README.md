@@ -105,7 +105,7 @@ $ flutter pub get
 
 ---
 
-## 👥 Autor
+## 👥 Autores
 <table>
   <tr>
     <td>
