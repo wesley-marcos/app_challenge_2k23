@@ -64,25 +64,17 @@ As seguintes bibliotecas foram usadas na construção do projeto:
 
 <p align="center" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
     <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-    <img alt="search page" style="margin-right: 10px"
-    src="src\assets\screenshots\search.png" width="200px">
-    <img alt="result page" style="margin-right: 10px" src="src\assets\screenshots\result.png" width="200px">
-    <img alt="infoCard page" 
-    src="src\assets\screenshots\infoCard.png" width="200px">
+    <img alt="home page" style="margin-right: 10px" src="images\screens\home.png" width="200px">
+    <img alt="singUp page" style="margin-right: 10px" src="images\screens\signUp.png" width="200px">
+    <img alt="login page" style="margin-right: 10px" src="images\screens\login.png" width="200px">
     </p>
     <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-    <img alt="university register page" style="margin-right: 10px" src="src\assets\screenshots\universityRegister.png" width="200px">
-    <img alt="login page" style="margin-right: 10px"
-    src="src\assets\screenshots\login.png" width="200px">
-    <img alt="profile page"
-    src="src\assets\screenshots\profile.png" width="200px">
+    <img alt="mainly page" style="margin-right: 10px" src="images\screens\mainly.png" width="200px">
+    <img alt="menu drawer page" src="images\screens\menu_drawer.png" width="200px">
+    <img alt="profile page" style="margin-right: 10px" src="images\screens\perfil.png" width="200px">
     </p>
     <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-    <img alt="course register page" style="margin-right: 10px" 
-    src="src\assets\screenshots\courseRegister.png" width="200px">
-    <img alt="course update page" style="margin-right: 10px" src="src\assets\screenshots\courseUpdate.png" width="200px">
-    <img alt="university update page" 
-    src="src\assets\screenshots\universityUpdate.png" width="200px">
+    <img alt="developers page" src="images\screens\aboutUs.png" width="200px">
     </p>
 </p>
 
